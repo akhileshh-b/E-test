@@ -1,0 +1,133 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url(images/13312322_v748-toon-131.jpg);
+    /* background:url("https://img.freepik.com/free-vector/realistic-design-technology-background_23-2148426705.jpg?w=1060&t=st=1715201177~exp=1715201777~hmac=7256eb83f42cfca3e0a59fe2e5bc0687a4a21eebd759bab5fd49c93937c9875e"); */
+    background-size: cover;
+  }
+  
+  .loginTitle {
+    font-size: 50px;
+    align-items: center;
+  background-color: #000000;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+    
+  }
+  
+  .loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+  
+  .loginForm > label {
+    margin: 10px 0;
+  }
+  
+  .loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .loginInput:focus {
+    outline: none;
+  }
+  
+  .loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .loginRegisterButton {
+    position: fixed;
+    top: 11px;
+    z-index: 999;
+    right: 20px;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+  }
+  .errorlogin{
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 2px;
+  }
+
+ /* loader */
+ @keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.load {
+  width: 16px;
+  height: 16px;
+  margin-left: 4.5rem;
+  border: solid 1px white;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1.0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
